@@ -42,8 +42,9 @@
       &nbsp;&nbsp;&nbsp;&nbsp;Projects
     </h2>
     <br>
+    <input type="text" id="filter" onkeyup="filterByTitle()" placeholder="Filter by Title..">
     <div>
-      <div class="table-responsive" style="width: 80%;margin: 0 auto;">
+      <div id="project_list" class="table-responsive" style="width: 80%;margin: 0 auto;">
         <table class="table table-striped">
           <thead>
             <tr>
@@ -54,9 +55,9 @@
           </thead>
           <tbody>
             <tr>
-              <td>1,001</td>
-              <td>Lorem</td>
-              <td>ipsum</td>
+              <td>Miscellaneous Calculator</td>
+              <td>Python</td>
+              <td>5/14/2014</td>
             </tr>
           </tbody>
         </table>
@@ -67,6 +68,29 @@
 
       </footer>
 
+
+      <script>
+        function filterByTitle() {
+          // Declare variables 
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("filter");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("project_list");
+          tr = table.getElementsByTagName("tr");
+
+          // Loop through all table rows, and hide those who don't match the search query
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+              if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            } 
+          }
+        }
+      </script>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
