@@ -42,8 +42,8 @@
       &nbsp;&nbsp;&nbsp;&nbsp;Projects
     </h2>
     <br>
+    <div style="width: 80%;margin: 0 auto;">
     <input type="text" id="filter" onkeyup="filterByTitle()" placeholder="Filter by Title..">
-    <div>
       <div id="project_list" class="table-responsive" style="width: 80%;margin: 0 auto;">
         <table class="table table-striped">
           <thead>
@@ -85,7 +85,7 @@
               if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
                 tr[i].style.display = "";
               } else {
-                tr[i].style.display = "none";
+                tr[i].style.display = "---";
               }
             } 
           }
