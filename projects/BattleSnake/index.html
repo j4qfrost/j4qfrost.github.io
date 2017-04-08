@@ -106,6 +106,26 @@
     </style>
   </head>
   <body>
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+      <a class="navbar-brand" href="/"><img src="/AQ.png" ></a>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+              <a class="nav-link" href="/projects">Projects</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/resume">Resume</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/blog">Blog</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+    
+    <br><br>
     <a href="http://emscripten.org">
       <svg
    version="1.1"
@@ -1216,7 +1236,7 @@
 
     
     <div class="emscripten_border">
-      <div style="width: 80%;margin: 0 auto;padding-bottom: 20px;">
+      <div style="width: 80%;margin: 0 auto;padding-bottom: 20px;padding-top: 20px;">
         <h2>Battle Snake</h2>
         <p>
           <b>Description:</b> This project was originally written in C++ as a simple way to plug AIs in for playing Snake against other players or AIs. It uses SDL2 and various related extentions. The port to Javascript is supported by emscripten, which requires significant refactoring from the original source in order for emscripten to compile the byte code. The project was also ported to NaCl for Chrome under an old version of pepper, which is no longer supported. The source for the emscripten port is provided below; for the original source, contact me at <a href="mailto:j4qfrost@gmail.com">j4qfrost@gmail.com</a>

@@ -106,6 +106,26 @@
     </style>
   </head>
   <body>
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+      <a class="navbar-brand" href="/"><img src="/AQ.png" ></a>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+              <a class="nav-link" href="/projects">Projects</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/resume">Resume</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/blog">Blog</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+    
+    <br><br>
     <a href="http://emscripten.org">
       <svg
    version="1.1"
@@ -1216,7 +1236,7 @@
 
     
     <div class="emscripten_border">
-      <div style="width: 80%;margin: 0 auto;padding-bottom: 20px;">
+      <div style="width: 80%;margin: 0 auto;padding-bottom: 20px;padding-top: 20px">
         <h2>Pyman</h2>
         <p>
           <b>Description:</b> This project was originally written in C++ and used embedded Python in order to introduce coing to a simple platforming game. It uses SDL2 and various related extentions and C bindings fr Python 3. The port to Javascript is supported by emscripten, which requires significant refactoring from the original source in order for emscripten to compile the byte code. Since porting Python.h to emscripten for development is non-trivial, running the Python scripts in the browser is not currently possible. The source for the emscripten port is provided below; for the original source, contact me at <a href="mailto:j4qfrost@gmail.com">j4qfrost@gmail.com</a>
