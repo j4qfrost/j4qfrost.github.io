@@ -1,6 +1,10 @@
 <!doctype html>
 <html lang="en-us">
   <head>
+    <link href="/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/jumbotron.css" rel="stylesheet">
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Emscripten-Generated Code</title>
@@ -1212,6 +1216,13 @@
 
     
     <div class="emscripten_border">
+      <div style="width: 80%;margin: 0 auto;padding-bottom: 20px;">
+        <h2>Battle Snake</h2>
+        <p>
+          <b>Description:</b> This project was originally written in C++ as a simple way to plug AIs in for playing Snake against other players or AIs. It uses SDL2 and various related extentions. The port to Javascript is supported by emscripten, which requires significant refactoring from the original source in order for emscripten to compile the byte code. The project was also ported to NaCl for Chrome under an old version of pepper, which is no longer supported. The source for the emscripten port is provided below; for the original source, contact me at <a href="mailto:j4qfrost@gmail.com">j4qfrost@gmail.com</a>
+        </p>
+        <a class="btn btn-secondary" href="BattleSnake.zip" role="button">Source</a>
+      </div>
       <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
     </div>
     <textarea id="output" rows="8"></textarea>
