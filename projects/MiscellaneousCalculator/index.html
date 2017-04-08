@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Projects</title>
+    <title>Python</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -39,63 +39,18 @@
     <br><br>
 
     <h2>
-      &nbsp;&nbsp;&nbsp;&nbsp;Projects
+    	&nbsp;&nbsp;&nbsp;&nbsp;Miscellaneous Calculator
     </h2>
-    <br>
-    <div style="width: 80%;margin: 0 auto;">
-    <input style="float: right" type="text" id="filter" onkeyup="filterByTitle()" placeholder="Filter by Title..">
-      <div id="project_list" class="table-responsive" style="width: 80%;margin: 0 auto;">
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Language</th>
-              <th>Date</th>
-            </tr>
-          </thead>
-          <tbody>
-            <a href="MiscellaneousCalculator"><tr>
-              <td>Miscellaneous Calculator</td>
-              <td>Python</td>
-              <td>5/14/2014</td>
-            </tr></a>
-            <a href="BattleSnake"><tr>
-              <td>Battle Snake</td>
-              <td>C++/Javascript</td>
-              <td>11/30/2013</td>
-            </tr></a>
-          </tbody>
-        </table>
-      </div>
-    </div>
+
+	    <div style="text-align: center;">
+	    	<iframe src="https://trinket.io/embed/python/e64ee22679?toggleCode=true&start=result" width="50%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+	    </div>
+
 
       <footer>
 
       </footer>
 
-
-      <script>
-        function filterByTitle() {
-          // Declare variables 
-          var input, filter, table, tr, td, i;
-          input = document.getElementById("filter");
-          filter = input.value.toUpperCase();
-          table = document.getElementById("project_list");
-          tr = table.getElementsByTagName("tr");
-
-          // Loop through all table rows, and hide those who don't match the search query
-          for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td")[0];
-            if (td) {
-              if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                tr[i].style.display = "";
-              } else {
-                tr[i].style.display = "none";
-              }
-            } 
-          }
-        }
-      </script>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
