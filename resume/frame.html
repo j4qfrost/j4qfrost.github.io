@@ -61,7 +61,7 @@
           return decodeURIComponent(results[2].replace(/\+/g, " "));
       }
       document.getElementById("frame").setAttribute("src","https://docs.google.com/document/d/" + getParameterByName("docid") + "/pub?embedded=true");
-      document.getElementById("header").write(getParameterByName("name"));
+      document.getElementById("header").innerHTML = getParameterByName("name");
     </script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
