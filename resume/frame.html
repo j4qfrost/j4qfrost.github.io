@@ -37,11 +37,11 @@
     </nav>
     
     <br><br>
-    <div style="text-align: center">
+    <div id="frame" style="text-align: center">
       <h2 id="header">
         
       </h2>
-      <iframe id="frame" width="50%" height="600px" src="https://docs.google.com/document/d/1TlwJ-WDpa-WiFAnFF7EIHgYuVBq27mzR9ueX1E__eLU/pub?embedded=true"></iframe>
+      <iframe id="frame" width="50%" height="600px" src=""></iframe>
      </div>
 
       <footer>
@@ -60,7 +60,11 @@
           if (!results[2]) return '';
           return decodeURIComponent(results[2].replace(/\+/g, " "));
       }
-      document.getElementById("frame").setAttribute("src","https://docs.google.com/document/d/" + getParameterByName("docid") + "/pub?embedded=true");
+
+      var iframe = document.createElement('iframe');
+      iframe.setAttribute("src","https://docs.google.com/document/d/" + getParameterByName("docid") + "/pub?embedded=true");
+      document.getElementById("frame").appendChild(iframe);
+
       document.getElementById("header").innerHTML = getParameterByName("name");
     </script>
     <!-- Bootstrap core JavaScript
