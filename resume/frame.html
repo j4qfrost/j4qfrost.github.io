@@ -38,16 +38,31 @@
     
     <br><br>
     <div style="text-align: center">
-      <h2>
-        Resume
+      <h2 id="header">
+        
       </h2>
-      <iframe width="66%" height="1000px" src="https://docs.google.com/document/d/1TlwJ-WDpa-WiFAnFF7EIHgYuVBq27mzR9ueX1E__eLU/pub?embedded=true"></iframe>
+      <iframe id="frame" width="66%" height="800px" src="https://docs.google.com/document/d/1TlwJ-WDpa-WiFAnFF7EIHgYuVBq27mzR9ueX1E__eLU/pub?embedded=true"></iframe>
      </div>
 
       <footer>
 
       </footer>
 
+    <script type="text/javascript">
+      function getParameterByName(name, url) {
+          if (!url) {
+            url = window.location.href;
+          }
+          name = name.replace(/[\[\]]/g, "\\$&");
+          var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+              results = regex.exec(url);
+          if (!results) return null;
+          if (!results[2]) return '';
+          return decodeURIComponent(results[2].replace(/\+/g, " "));
+      }
+      document.getElementById("frame").setAttribute("src","https://docs.google.com/document/d/" + getParameterByName("docid") + "/pub?embedded=true");
+      document.getElementById("header").write(getParameterByName("name"));
+    </script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
