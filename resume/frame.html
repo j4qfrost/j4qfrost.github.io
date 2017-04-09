@@ -41,7 +41,6 @@
       <h2 id="header">
         
       </h2>
-      <iframe id="frame" width="50%" height="600px" src=""></iframe>
      </div>
 
       <footer>
@@ -62,6 +61,8 @@
       }
 
       var iframe = document.createElement('iframe');
+      iframe.setAttribute("width","50%");
+      iframe.setAttribute("height","600px");
       iframe.setAttribute("src","https://docs.google.com/document/d/" + getParameterByName("docid") + "/pub?embedded=true");
       document.getElementById("frame").appendChild(iframe);
 
