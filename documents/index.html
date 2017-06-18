@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Projects</title>
+    <title>Documents</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -47,42 +47,54 @@
     
     <br><br>
 
-    <h2>
-      &nbsp;&nbsp;&nbsp;&nbsp;Projects
-    </h2>
+
+
     <div style="width: 80%;margin: 0 auto;">
-      <input style="float: right" type="text" id="filter" onkeyup="filterByTitle()" placeholder="Filter by Title..">
-    </div>
-    <div style="width: 80%;margin: 0 auto;">
-      <div id="project_list" class="table-responsive" style="width: 80%;margin: 0 auto;">
+      <h4>
+        Qualifications
+      </h4>
+      <div id="resume_list" class="table-responsive" style="width: 80%;margin: 0 auto;">
         <table class="table table-striped">
           <thead>
             <tr>
               <th>Title</th>
-              <th>Language</th>
+              <th>Last Edited</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="frame.html?name=Resume&docid=1TlwJ-WDpa-WiFAnFF7EIHgYuVBq27mzR9ueX1E__eLU">Latest Resume</a></td>
+              <td>4/9/2017</td>
+            </tr>
+            <tr>
+              <td><a href="frame.html?name=CV&docid=1b5oVRaaalsuCf_Mq4VA9GQeYGuD4Q2XQmjT11kvUp9w">CV</a></td>
+              <td>4/9/2017</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+    <br><br>
+    <div style="width: 80%;margin: 0 auto;">
+      <h4>
+        Cover Letters
+      </h4>
+      <div id="cover_letter_list" class="table-responsive" style="width: 80%;margin: 0 auto;">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Position</th>
+              <th>Company</th>
               <th>Date</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td><a href="Pyman">Pyman</a></td>
-              <td>C++/Javascript</td>
+              <td><a href="frame.html?name=Template&docid=1Sy81JvYp7_6GpQYS8Mg8oDbYKH3hILVx-KwSQPT6Ldw">Template</a></td>
+              <td>ALL</td>
               <td>11/28/2015</td>
-            </tr>
-            <tr>
-              <td><a href="Unfold">Unfold</a></td>
-              <td>Unity/C#</td>
-              <td>9/24/2015</td>
-            </tr>
-            <tr>
-              <td><a href="MiscellaneousCalculator">Miscellaneous Calculator</a></td>
-              <td>Python</td>
-              <td>5/14/2014</td>
-            </tr>
-            <tr>
-              <td><a href="BattleSnake">Battle Snake</a></td>
-              <td>C++/Javascript</td>
-              <td>11/30/2013</td>
             </tr>
           </tbody>
         </table>
@@ -92,30 +104,6 @@
       <footer>
 
       </footer>
-
-
-      <script>
-        function filterByTitle() {
-          // Declare variables 
-          var input, filter, table, tr, td, i;
-          input = document.getElementById("filter");
-          filter = input.value.toUpperCase();
-          table = document.getElementById("project_list");
-          tr = table.getElementsByTagName("tr");
-
-          // Loop through all table rows, and hide those who don't match the search query
-          for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td")[0];
-            if (td) {
-              if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                tr[i].style.display = "";
-              } else {
-                tr[i].style.display = "none";
-              }
-            } 
-          }
-        }
-      </script>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
