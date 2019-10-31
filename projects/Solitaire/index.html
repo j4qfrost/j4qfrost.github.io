@@ -88,11 +88,9 @@
       }
 
       @viewport and (orientation: portrait) {
-       canvas {
-         width: 100%;
-         height: 100%;
-         position: absolute;
-       }
+        body { margin: 0; }
+        #gameContainer { width: 100vw; height: 100vh; }
+        canvas { width: 100%; height: 100%; }
       }
     </style>
   </head>
