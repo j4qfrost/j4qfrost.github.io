@@ -54,8 +54,17 @@
     <h3 class="{% if site.style == 'dark' %}text-white{% endif %} lh-condensed mb-2">Blogs</h3>
     <div class="d-flex flex-wrap flex-items-start {% if site.layout == 'stacked' %}flex-justify-center mt-1 mt-md-3{% endif %}">
         {% for blog in site.blogs %}
-          <div class="mb-3">
+          <div class="mb-1">
             <a href="{{blog.url}}">{{blog.name}}</a>
+          </div>
+        {% endfor %}
+    </div>
+
+    <h3 class="{% if site.style == 'dark' %}text-white{% endif %} lh-condensed mb-2">Organizations</h3>
+    <div class="d-flex flex-wrap flex-items-start {% if site.layout == 'stacked' %}flex-justify-center mt-1 mt-md-3{% endif %}">
+        {% for org in site.orgs %}
+          <div class="mb-1">
+            <a href="{{org.url}}">{{org.name}}</a>
           </div>
         {% endfor %}
     </div>

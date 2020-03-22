@@ -40,6 +40,12 @@ blogs:
   - name: Hello, Rox!
     url: j4qfrost.github.io/hello-rox
 
+orgs:
+  - name: Knights of the Funcitonal Calculus
+    url: https://github.com/Knights-of-the-Functional-Calculus
+  - name: Game Dev Studio UCSD
+    url: https://github.com/GameDevStudioUCSD
+
 feed:
   categories:
     - life
