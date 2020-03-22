@@ -30,6 +30,7 @@ projects:
 
 social_media:
   # instagram: your_username
+  github: j4qfrost
   linkedin: anhquan-nguyen
   # mastodon: your_username
   # twitter: your_username
@@ -37,7 +38,7 @@ social_media:
 
 blogs:
   - name: Hello, Rox!
-  - url: j4qfrost.github.io/hello-rox
+    url: j4qfrost.github.io/hello-rox
 
 feed:
   categories:
