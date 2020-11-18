@@ -28,6 +28,13 @@
         </a>
       </div>
     {% endif %}
+    {% if site.phone %}
+      <div class="{{ metadata_styles }}">
+        <a href="tel:{{ site.phone }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
+          {{ site.phone }}
+        </a>
+      </div>
+    {% endif %}
     {% if user.location %}
       <div class="{{ metadata_styles }} {% if site.style == 'dark' %}text-white{% endif %}">
         {% octicon location height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:Location %}
