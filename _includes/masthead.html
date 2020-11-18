@@ -30,6 +30,7 @@
     {% endif %}
     {% if site.phone %}
       <div class="{{ metadata_styles }}">
+        {% octicon phone height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:email %}
         <a href="tel:{{ site.phone }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
           {{ site.phone }}
         </a>
