@@ -1,11 +1,11 @@
 ---
 title: "Too Many Goddamn Laws!"
 date: 2020-12-06
-tags: politics law
+tags: politics law ml
 author: frosty
 ---
 ## Preface
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I have been reading an enlightening book titled *You Have the Right to Remain Innocent* by James Duane, which inspired an idea. The federal criminal code in America is perversely gargantuan and is a clear demonstration of government overreach and hubris. The title of a book by civil liberties lawyer, Harvey Silvergate, *Three Felonies a Day*[[1]](#1), refers to the estimate that the average American commits at least three felonies daily without even realizing it. Federal conservation laws prohibit possession of a "short lobster," yes a lobster that is too small.[[Duane 18]](#2) America clearly has an overcriminalization problem. Day to day, this probably isn't an issue; what police officer is going to go around measuring your lobsters and arresting you for inadequate lobster size? It's absurd, but the question still stands. As long as a law is on the books, a police state could use that law to justify an arrest whether the arrest was a morally sound decision or not.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I have been reading an enlightening book titled *You Have the Right to Remain Innocent* by James Duane, which inspired an idea. The federal criminal code in America is perversely gargantuan and is a clear demonstration of government overreach and hubris. The title of a book by civil liberties lawyer, Harvey Silvergate, *Three Felonies a Day*[[1]](#1), refers to the estimate that the average American commits at least three felonies daily without even realizing it. Federal conservation laws prohibit possession of a "short lobster," yes a lobster that is too small.[[2]](#2) America clearly has an overcriminalization problem. Day to day, this probably isn't an issue; what police officer is going to go around measuring your lobsters and arresting you for inadequate lobster size? It's absurd, but the question still stands. As long as a law is on the books, a police state could use that law to justify an arrest whether the arrest was a morally sound decision or not.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My peers and I have been so incredibly fortunate to be raised in an environment where despite these insane laws, individual freedoms have generally been upheld, but I have been to countries where those liberties are only reserved for the class of people wealthy enough to pay for them. This issue is also present in America though to expound on that here would lead to a long, dicey tangent, which I don't shy from, but we have other things to discuss here. The key issues that I want to solve are problems with classism which are often conflated with problems pertaining to racism, though the two often intermingle.
 
@@ -29,5 +29,5 @@ Encounter Books (June 7, 2011)
 
 <a id="2">[2]</a>
 Duane, James, (2016).
-You Have the Right to Remain Innocent
+You Have the Right to Remain Innocent pg. 18
 Little A, New York (2016)
